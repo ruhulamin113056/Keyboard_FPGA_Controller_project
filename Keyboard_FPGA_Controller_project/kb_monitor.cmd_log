@@ -1,8 +1,0 @@
-xst -intstyle ise -filter "D:/FPGA HOME/New folder/PS2_KEYBOARD_Project/iseconfig/filter.filter" -ifn "D:/FPGA HOME/New folder/PS2_KEYBOARD_Project/kb_monitor.xst" -ofn "D:/FPGA HOME/New folder/PS2_KEYBOARD_Project/kb_monitor.syr" 
-xst -intstyle ise -filter "D:/FPGA HOME/New folder/PS2_KEYBOARD_Project/iseconfig/filter.filter" -ifn "D:/FPGA HOME/New folder/PS2_KEYBOARD_Project/kb_monitor.xst" -ofn "D:/FPGA HOME/New folder/PS2_KEYBOARD_Project/kb_monitor.syr" 
-xst -intstyle ise -filter "D:/FPGA HOME/New folder/PS2_KEYBOARD_Project/iseconfig/filter.filter" -ifn "D:/FPGA HOME/New folder/PS2_KEYBOARD_Project/kb_monitor.xst" -ofn "D:/FPGA HOME/New folder/PS2_KEYBOARD_Project/kb_monitor.syr" 
-ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "kb_monitor.ngc" kb_monitor.ngd  
-map -filter "D:/FPGA HOME/New folder/PS2_KEYBOARD_Project/iseconfig/filter.filter" -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o kb_monitor_map.ncd kb_monitor.ngd kb_monitor.pcf 
-par -filter "D:/FPGA HOME/New folder/PS2_KEYBOARD_Project/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off kb_monitor_map.ncd kb_monitor.ncd kb_monitor.pcf 
-trce -filter {D:/FPGA HOME/New folder/PS2_KEYBOARD_Project/iseconfig/filter.filter} -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml kb_monitor.twx kb_monitor.ncd -o kb_monitor.twr kb_monitor.pcf -ucf Nexys3_master.ucf 
-bitgen -filter "iseconfig/filter.filter" -intstyle ise -f kb_monitor.ut kb_monitor.ncd 
